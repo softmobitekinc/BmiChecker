@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <title>Bmi Checker</title>
+</head>
+<body>
+    <div class="container-fluid p-0 mb-5">
+        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-0">
+            <a href="" class="navbar-brand d-block ">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-info">BMI </span>Calculator</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-4">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link active">BMI Status</a>
+                    <a href="guard.html" class="nav-item nav-link">Print BMI</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Help</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="blog.html" class="dropdown-item">See Consultant</a>
+                            <a href="single.html" class="dropdown-item">Visit Our Page</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+        
+      
+    
+    
+    <p id="bmiScore">BMI SCORE is achieved by weight of the body(kg)/height in metre square (<sub>M</sub><sup>2</sup>):
+    BMI of between 20 and 25 = Normal<br>
+    BMI of between 25 and 30 = Overweight<br>
+    BMI greater than 30 = Clinically Obese <br>
+    BMI of below 20 = Underweight<br>
+    </p>
+    
+    
+    
+    <div id="ProgField">
+      <h2 style="color:green">
+        <br>
+        <div id="showScore" value="Results"></div>
+        <br><br>
+      </h2>
+    
+    <p id="inputWeight">ENTER WEIGHT(Kg):</p><input id="weight" type="number" focus><br/>
+    
+    <p id="inputHeight">ENTER HEIGHT(m):</p><input id="height" type="number"><br/>
+    
+    <div class="container">
+      
+      <button type="submit" class='button mt-5' onclick="Calc()">CHECK NOW</button>
+    
+    
+    </div>
+    
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
