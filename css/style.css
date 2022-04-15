@@ -9027,5 +9027,9 @@ h6 {
     padding: 30px;
   }
 }
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
 
 /*# sourceMappingURL=style.css.map */
