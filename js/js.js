@@ -17,21 +17,18 @@ function Calc(){
     const BMIscore = (w/metTosquare);
     const bmiTodp = BMIscore;
             if(BMIscore>=20 && BMIscore <=25){
-            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore + " " + "\n"+ "Status : Normal ";
+            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore + " " + "<br />" + "Status : Normal ";
             }else if(BMIscore >25 && BMIscore <=30 ){
-            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + "\n"+ "Status : Overweight ";
+            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + "<br />" + "Status : Overweight ";
             }else if(BMIscore >30){
-            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + "\n"+ "Status : Obese ";
-            BMIscore.value.style.color=="red";
+            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + "<br />" + "Status : Obese ";
             }else if(BMIscore < 20){
-            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + "\n" + "Status : Overweight";
-            BMIscore.value.style.color=="red";
+            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + "<br />" + "Status : Overweight";
             }else if(BMIscore="NaN" && w.value=="NaN "  && h.value =="NaN"){
             alert("OOPS there is something wrong enter a valid figure");
             } else if(BMIscore<=0){
             alert("insert a valid weight and height");
             }
-        
             }else{
             alert("Please insert RIGHT FIGURE IN EITHER weight OR height INPUT field, NIETHER SHOULD YOU LEAVE THE FIELD EMPTY");
             }
