@@ -17,13 +17,13 @@ function Calc(){
     const BMIscore = (w/metTosquare);
     const bmiTodp = BMIscore;
             if(BMIscore>=20 && BMIscore <=25){
-            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore + " " + "<br />" + "Status : Normal ";
+            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore + " " + " " + "Status : Normal ";
             }else if(BMIscore >25 && BMIscore <=30 ){
-            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + "<br />" + "Status : Overweight ";
+            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + " " + "Status : Overweight ";
             }else if(BMIscore >30){
-            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + "<br />" + "Status : Obese ";
+            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + " " + "Status : Obese ";
             }else if(BMIscore < 20){
-            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + "<br />" + "Status : Overweight";
+            document.getElementById("showScore").textContent ="BMI SCORE: " + BMIscore+ " " + " " + "Status : Overweight";
             }else if(BMIscore="NaN" && w.value=="NaN "  && h.value =="NaN"){
             alert("OOPS there is something wrong enter a valid figure");
             } else if(BMIscore<=0){
